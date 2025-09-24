@@ -1,9 +1,9 @@
 .skills-card {
-    background-color: #f8f9fa;
+    background-color: #000000;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
 }
 .photo-container {
     height: 400px;
@@ -14,6 +14,17 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+}
+.photo-logo {
+    height: 100px; /* или нужная высота для хедера */
+    width: auto; /* сохраняет пропорции */
+    background-image: url('../image/logo.jpg');
+    background-size: contain; /* вся картинка видна */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px; /* меньше скругление */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* более легкая тень */
+    margin-bottom: 0; /* обычно для лого не нужен отступ */
 }
 h1 {
     color: #2c3e50;
@@ -28,4 +39,98 @@ h2 {
 .list-group-item {
     border: none;
     padding: 8px 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skills-card ul {
+    padding-left: 20px;
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+.name {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 5px hsl(0, 100%, 50%),
+        0 0 10px hsl(0, 100%, 50%),
+        0 0 15px hsl(0, 100%, 50%),
+        0 0 20px hsl(0, 100%, 50%);
+    animation: neon-pulse 2s ease-in-out infinite alternate;
+}
+
+.skills-card h2 {
+    color: #fff;
+    text-shadow: 
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 15px #00ffff,
+        0 0 20px #00ffff,
+        0 0 35px #00ffff,
+        0 0 40px #00ffff;
+    font-weight: bold;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.nav_text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    line-height: 100px;
+    text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00;
+}
+
+.list-group-item {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 100px;
+    text-shadow: 
+        0 0 5px #a200ff,
+        0 0 10px #a200ff,
+        0 0 15px #a200ff;
+    line-height: 1.1;
+}
+#demo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.button_js {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#myButton {
+    background: linear-gradient(45deg, #ff0000, #a200ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#myButton:hover {
+    transform: scale(1.05);
 }
